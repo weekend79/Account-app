@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block page_title %}{{ user }}'s Profile{% endblock %}
+
+{% block page_heading %}{{ user }}'s Profile{% endblock %}
+
+
+{% block main %}
+
+<div class="container">
+    <h1>Hello World!</h1>
+    <p>{{ user.email}}</p>
+    <p>{{ user.username}}</p>
+    
+   <a href="{% url 'password_change' %}"><button>Change Password</button></a>
+
+</div>
+
+{% endblock %}
