@@ -85,8 +85,8 @@ if 'DATABASE_URL' in os.environ:
             'ENGINE': 'django.db.backends.mysql',
             'NAME': os.environ['DB_NAME_NEW'],
             'USER': os.environ['DB_USER'],
-            'PASSWORD': '',
-            'HOST': 'localhost',
+            'PASSWORD': os.environ['PASSWORD'],
+            'HOST': os.environ['HOST'],
             'POST': '80',
         }
     }
@@ -148,7 +148,7 @@ STATICFILES_DIRS = (
     )
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_URL = '/media/images/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
