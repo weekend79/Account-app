@@ -28,15 +28,75 @@
                 <li><a id="text-color" class="nav-link" href="{% url 'login' %}"><i class ="fa fa-sign-in"></i> Login</a></li>
                 <li><a id="text-color" class="nav-link" href="{% url 'register' %}"><i class ="fa fa-user-plus"></i> Register</a></li>
             {% endif %}
-            
+            <li>
+                <a id="text-color" class="nav-link" href="{% url 'view_cart' %}">
+                    <i class="fa fa-shopping-cart"></i>cart
+                    {% if product_count > 0 %}
+                    <label class="badge badge-warning">{{ product_count }}</label>
+                    {% endif %}
+                </a>
+            </li>
             <li><a id="text-color" class="nav-link" href="#"><i class="fa fa-at"></i>Contact Us</a></li>
             <li><a id="text-color" class="nav-link" href="{% url 'products' %}"><i class="fab fa-product-hunt"></i>Products</a></li>
             </div>
         </div>
         </div>
     </nav>
+     <div class="container">
+    {% if messages %}
+        <div class="alert alert-success">
+            <div class="messages">
+                {% for message in messages %}
+                    {{ message }}
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
     {% block main %}
     {% endblock %}
+<footer>
+  
+    <div class="row">
+      <div class="col-12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+          
+            <h5 class="panel-title">WKND79</h5>
+          </div>
+          <div class="container">
+          <div class="row">
+            <div class="col-sm-4 text-center">
+              <h3>About WKND79</h3>
+              <p>Made by Morten</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <h3>Lorem Ipsum </h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <div class="col-sm-4 text-center">
+              <h3>Lorem Ipsum </h3>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+              <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          </div>
 
+          <div class="panel-body text-center">
+            <a class="uppercase" href="#">Home</a>
+            <a href="#">WKND79</a>
+            <a class="uppercase" href="#">Contact</a>
+            <a class="uppercase" href="#">Login</a>
+            <div>
+
+              <i class="fa fa-copyright"></i>
+              <span>All rights reserved WKND79</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+ </footer>
 </body>
 </html>
