@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'contacts.apps.ContactsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -163,3 +164,5 @@ CART_SESSION_ID = 'cart'
 STRIPE_PUBLISHABLE = os.environ.get('STRIPE_PUBLISHABLE')
 STRIPE_SECRET = os.environ.get('STRIPE_SECRET')
 
+DEFAULT_FROM_EMAIL = 'mortenviken@yahoo.com'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
