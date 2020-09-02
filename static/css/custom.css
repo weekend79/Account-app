@@ -4,11 +4,22 @@ body {
 
 /*----------- Navbar ---*/
 
-
  a.navbar-brand {
     text-align: center;
     font-size: 35px;
     font-weight: 3px;
-    color: #fff;
+    color: antiquewhite;
     vertical-align: center;
+}
+
+/* -------- Carousel */
+
+img.image-height {
+    max-height: 700px;
+}
+
+
+/*--------- Footer */
+.text-color {
+    color: antiquewhite;
 }
