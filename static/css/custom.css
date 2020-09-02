@@ -1,3 +1,14 @@
-div {
-    background-color: red;
+body {
+    background-color: #2E86C1 ;
+}
+
+/*----------- Navbar ---*/
+
+
+ a.navbar-brand {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 3px;
+    color: #fff;
+    vertical-align: center;
 }
