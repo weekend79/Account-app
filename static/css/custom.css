@@ -62,6 +62,10 @@ h3.panel-title {
     padding-top: 20px;
 }
 
+div.col-sm-4.text-center {
+    margin-top: 3%;
+}
+
 /*----------------- Index */
 
 h3.panel-title.text-center.text-color {
