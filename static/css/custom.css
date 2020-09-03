@@ -1,25 +1,125 @@
+/* Import of my fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+
+
+/* ------ Special settings */
+h1 h2 h3 h4 h5 h6 p {
+    color: antiquewhite;
+}
+
+a {
+    color: antiquewhite;
+}
+
+
 body {
     background-color: #2E86C1 ;
+    font-family: "Roboto", Sans-serif;
+    color: antiquewhite; 
+}
+
+div.row {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 /*----------- Navbar ---*/
 
  a.navbar-brand {
     text-align: center;
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 3px;
     color: antiquewhite;
     vertical-align: center;
 }
 
-/* -------- Carousel */
-
-img.image-height {
-    max-height: 700px;
+/* -------------Toggle bar --*/
+span.navbar-toggler-icon {
+    color: antiquewhite;
 }
 
+/* -------- Carousel */
+
+div.carousel-item {
+    max-height: 800px;
+}
 
 /*--------- Footer */
 .text-color {
     color: antiquewhite;
+}
+
+div.panel-heading {
+    border-top: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    background-color: #2471A3;
+    height: 75px;
+    margin-top: 3%;
+}
+
+h3.panel-title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*----------------- Index */
+
+h3.panel-title.text-center.text-color {
+    padding-top: 0;
+}
+
+/*----------- Search bar */
+#form-style {
+    padding: 5%;
+    text-align: center;
+    border-bottom: 1px solid #2471A3;
+    
+}
+
+input {
+    border-radius: 10px;
+    border-color: antiquewhite;
+    height: 75px;
+    padding-left: 5%;
+}
+
+#search_button {
+    border-radius: 10px;
+    border-color: antiquewhite;
+    height: 75px;
+    color: antiquewhite;
+    margin-top: 0%;
+}
+
+button.col-3.bg-success {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+strong.search-text {
+    font-size: 18px;
+}
+
+/* ---------- Product box ---*/
+
+div.product {
+    height: 300px;
+}
+
+#product-box {
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+
+
+
+/*-------------- Remove */
+div.col-12 {
+    padding-left: 0;
+    padding-right: 0;
 }
