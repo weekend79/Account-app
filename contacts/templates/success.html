@@ -1,14 +1,17 @@
 {% extends 'base.html' %}
 
 {% block main %}
-
-<h1>Thank you for Contacting Us</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
+<div class="container">
+    <div class="col-xs-10 offset-xs-1">
+        <div class="card">
+          <div class="card-header">
+            <h1>Thank you for Contacting Us</h1>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">We will get back to you as soon as possible!</h3>
+            <i class="fas fa-check"></i>
+          </div>
+        </div>
     </div>
-</form>
-
+</div>
 {% endblock %}

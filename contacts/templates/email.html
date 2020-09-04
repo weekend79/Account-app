@@ -1,15 +1,43 @@
-{% extends 'base.html' %}
-{% load crispy_forms_tags %}
-
-{% block main %}
-
-<h1>Contact Us</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form|crispy }}
-    <div class="form-actions">
-      <button type="submit">Send</button>
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block main %}
+<div class="container">
+  <div class="col-12">
+    <div class="row justify-content-center">
+      <div class="col-xs-10 offset-xs-1 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <i class="far fa-id-badge"></i>
+            WKND-79 Company 
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Happyland 765<br>55555 EVENHAPPIER</h5>
+            <h5 class="card-title"><i class="fas fa-phone"></i>999-99999</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-10 offset-xs-1 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Connect with us on social media!
+          </div>
+          <div class="card-body">
+            <h5 class="card-title card-extra-styling"><i class="fab fa-facebook"></i>&nbsp; <i class="fab fa-instagram"></i>&nbsp; <i class="fab fa-twitter"></i>&nbsp; <i class="fab fa-youtube"></i></h5>
+          </div>
+        </div>
+      </div>
     </div>
-</form>
+    <div id="contact-form-style" class="row justify-content-center">
+      <div class="col-xs-10 col-md-8 col-md-offset-2">
+        <form method="post">
+          {% csrf_token %} {{ form|crispy }}
+          <div class="form-actions">
+            <button class="contact-button-style bg-success col-4" type="submit">
+              Send
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </div>
+  {% endblock %}
 
-{% endblock %}

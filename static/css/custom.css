@@ -11,9 +11,12 @@ a {
     color: antiquewhite;
 }
 
+h1 {
+    padding-top: 5%;
+}
 
 body {
-    background-color: #2E86C1 ;
+    background-color: #2E86C1;
     font-family: "Roboto", Sans-serif;
     color: antiquewhite; 
 }
@@ -33,6 +36,10 @@ div.row {
     vertical-align: center;
 }
 
+nav.navbar {
+    border-bottom: 1px solid #2471A3;
+}
+
 /* -------------Toggle bar --*/
 span.navbar-toggler-icon {
     color: antiquewhite;
@@ -50,6 +57,13 @@ div.carousel-item {
 }
 
 div.panel-heading {
+    border-top: 1px solid antiquewhite;
+    border-bottom: 1px solid antiquewhite;
+    background-color: #2471A3;
+    height: 75px;
+}
+
+div.panel-heading.panel-heading-style {
     border-top: 1px solid antiquewhite;
     border-bottom: 1px solid antiquewhite;
     background-color: #2471A3;
@@ -126,4 +140,60 @@ div.product {
 div.col-12 {
     padding-left: 0;
     padding-right: 0;
+}
+
+/* ----------- Contact us ---*/
+
+h1.contact-header {
+    text-align: center;
+}
+
+#contact-form-style {
+    border: 1px solid antiquewhite;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 5%;
+}
+
+button.contact-button-style {
+    height: 75px;
+    text-align: center;
+    border-radius: 10px;
+    color: antiquewhite;
+    border-color: antiquewhite;
+}
+
+div.form-actions {
+    text-align: center;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+div.card {
+    color: #2471A3;
+    text-align: center;
+    padding-bottom: 25px;
+    margin-bottom: 10%;
+    margin-top: 10%;
+}
+
+div.card-header {
+    background-color: #2471A3;
+    color: antiquewhite;
+}
+
+h5.card-extra-styling {
+    font-size: 70px;
+}
+
+h5.card-extra-styling-two {
+    text-align: center;
+}
+
+/* --------------- Contact - Success */
+i.fas.fa-check {
+    font-size: 50px;
+    color: lightgreen;
+    padding-top: 5%;
 }
