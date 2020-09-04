@@ -26,6 +26,13 @@ div.row {
     margin-right: 0;
 }
 
+.btn-primary {
+    background-color: #2471A3;
+    color: antiquewhite;
+    font-size: 25px;
+    margin-top: 4%;
+}
+
 /*----------- Navbar ---*/
 
  a.navbar-brand {
@@ -196,4 +203,15 @@ i.fas.fa-check {
     font-size: 50px;
     color: lightgreen;
     padding-top: 5%;
+}
+
+
+/*-------------- Login ---*/
+h4.card-title {
+    background-color: #2471A3;
+    color: antiquewhite;
+    height: 50px;
+    border-radius: 5px;
+    padding-top: 10px;
+    vertical-align: center;
 }
