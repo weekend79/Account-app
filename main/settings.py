@@ -166,3 +166,6 @@ STRIPE_SECRET = os.environ.get('STRIPE_SECRET')
 
 DEFAULT_FROM_EMAIL = 'mortenviken@yahoo.com'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+LOGIN_REDIRECT_URL = 'index'
+

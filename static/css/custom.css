@@ -215,3 +215,20 @@ h4.card-title {
     padding-top: 10px;
     vertical-align: center;
 }
+
+
+/*----------------- Logout ---*/
+
+
+button.logout-button-style {
+    height: 50px;
+    background-color: #2471A3;
+    color: antiquewhite;
+    border: 1px solid antiquewhite;
+    border-radius: 5px;
+    margin: 5%;
+}
+
+div.logout-style {
+    padding-top: 5%;
+}
