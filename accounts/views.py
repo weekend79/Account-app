@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
+from .models import UserProfile
 
 
 # Create your views here.
@@ -22,3 +23,12 @@ def profile(request):
     return render(request, 'registration/profile.html')
 
 
+def logout(request):
+    """Return the logout page"""
+    logout = HttpRequest(redirect (request, 'registration/logout.html'))
+    return render(request, 'registration/logout.html')
+
+
+def userprofile(request):
+    """Dispaly the userprofile model"""
+    

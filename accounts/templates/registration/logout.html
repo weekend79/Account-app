@@ -1,7 +1,30 @@
-{% extends 'base.html' %}
-{% block main %}
+{% extends 'base.html' %} {% load crispy_forms_tags %} {% block main %}
+<div class="container">
+  <div class="col-12">
+    <div class="row">
+      <div class="col-12 logout-style">
+        <div class="row justify-content-center">
+            {% csrf_token %} {{ form|crispy }}
+          <h3>You are logged out!</h3>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-center">
+          <button
+            class="col-xs-10 offset-xs-1 offset-sm-0 col-md-3 logout-button-style"
+          >
+            <a href="{% url 'login' %}">Log in again</a>
+          </button>
 
-<p>You are logged out!</p>
-<a  href="{% url 'login' %}">Log in again</a>
+          <button
+            class="col-xs-10 offset-xs-1 offset-sm-0 col-md-3 logout-button-style"
+          >
+            <a href="{% url 'index' %}">Back Home </a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 {% endblock %}
